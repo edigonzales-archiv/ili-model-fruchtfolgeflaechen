@@ -1,0 +1,11 @@
+INTERLIS 2.3;
+
+MODEL MyModelTemplate (de)
+AT "http://www.geo.admin.ch"
+VERSION "2012-02-02"  =
+
+  TOPIC MyTopicTemplate =
+
+  END MyTopicTemplate;
+
+END MyModelTemplate.

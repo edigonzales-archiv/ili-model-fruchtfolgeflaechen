@@ -1,0 +1,19 @@
+INTERLIS 2.3;
+
+MODEL SO_Fruchtfolgeflaechen_20161111 (de)
+AT "http://geo.so.ch"
+VERSION "2016-11-11"  =
+  IMPORTS Fruchtfolgeflaechen_LV95_V1;
+
+  TOPIC TransferMetadaten
+  EXTENDS Fruchtfolgeflaechen_LV95_V1.TransferMetadaten =
+    OID AS INTERLIS.UUIDOID;
+
+    CLASS TransferMetadaten
+    EXTENDS Fruchtfolgeflaechen_LV95_V1.TransferMetadaten.TransferMetadaten =
+      Fubar_So : MANDATORY TEXT*255;
+    END TransferMetadaten;
+
+  END TransferMetadaten;
+
+END SO_Fruchtfolgeflaechen_20161111.
